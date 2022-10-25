@@ -1,0 +1,124 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EF59B0ED-C70A-4FB8-92F0-A7BEA53C484A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="src\Transformers\P4DTransformers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="src\DiffUsers\P4DDiffUsers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="src\FtFy\P4DFtFy.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="src\Spacy\P4DSpacy.dproj">
+            <Dependencies/>
+        </Projects>
+
+        <Projects Include="src\Transformers\dclP4DTransformers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="src\DiffUsers\dclP4DDiffUsers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="src\FtFy\dclP4DFtFy.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="src\Spacy\dclP4DSpacy.dproj">
+            <Dependencies/>
+        </Projects>
+
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="P4DTransformers">
+        <MSBuild Projects="src\Transformers\P4DTransformers.dproj"/>
+    </Target>
+    <Target Name="P4DTransformers:Clean">
+        <MSBuild Projects="src\Transformers\P4DTransformers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P4DTransformers:Make">
+        <MSBuild Projects="src\Transformers\P4DTransformers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P4DDiffUsers">
+        <MSBuild Projects="src\DiffUsers\P4DDiffUsers.dproj"/>
+    </Target>
+    <Target Name="P4DDiffUsers:Clean">
+        <MSBuild Projects="src\DiffUsers\P4DDiffUsers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P4DDiffUsers:Make">
+        <MSBuild Projects="src\DiffUsers\P4DDiffUsers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P4DFtFy">
+        <MSBuild Projects="src\FtFy\P4DFtFy.dproj"/>
+    </Target>
+    <Target Name="P4DFtFy:Clean">
+        <MSBuild Projects="src\FtFy\P4DFtFy.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P4DFtFy:Make">
+        <MSBuild Projects="src\FtFy\P4DFtFy.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="P4DSpacy">
+        <MSBuild Projects="src\Spacy\P4DSpacy.dproj"/>
+    </Target>
+    <Target Name="P4DSpacy:Clean">
+        <MSBuild Projects="src\Spacy\P4DSpacy.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="P4DSpacy:Make">
+        <MSBuild Projects="src\Spacy\P4DSpacy.dproj" Targets="Make"/>
+    </Target>
+
+    <Target Name="dclP4DTransformers">
+        <MSBuild Projects="src\Transformers\dclP4DTransformers.dproj"/>
+    </Target>
+    <Target Name="dclP4DTransformers:Clean">
+        <MSBuild Projects="src\Transformers\dclP4DTransformers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclP4DTransformers:Make">
+        <MSBuild Projects="src\Transformers\dclP4DTransformers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclP4DDiffUsers">
+        <MSBuild Projects="src\DiffUsers\dclP4DDiffUsers.dproj"/>
+    </Target>
+    <Target Name="dclP4DDiffUsers:Clean">
+        <MSBuild Projects="src\DiffUsers\dclP4DDiffUsers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclP4DDiffUsers:Make">
+        <MSBuild Projects="src\DiffUsers\dclP4DDiffUsers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclP4DFtFy">
+        <MSBuild Projects="src\FtFy\dclP4DFtFy.dproj"/>
+    </Target>
+    <Target Name="dclP4DFtFy:Clean">
+        <MSBuild Projects="src\FtFy\dclP4DFtFy.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclP4DFtFy:Make">
+        <MSBuild Projects="src\FtFy\dclP4DFtFy.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dclP4DSpacy">
+        <MSBuild Projects="src\Spacy\dclP4DSpacy.dproj"/>
+    </Target>
+    <Target Name="dclP4DSpacy:Clean">
+        <MSBuild Projects="src\Spacy\dclP4DSpacy.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dclP4DSpacy:Make">
+        <MSBuild Projects="src\Spacy\dclP4DSpacy.dproj" Targets="Make"/>
+    </Target>
+
+    <Target Name="Build">
+        <CallTarget Targets="P4DTransformers;dclP4DTransformers;P4DDiffUsers;dclP4DDiffUsers;P4DFtFy;dclP4DFtFy;P4DSpacy;dclP4DSpacy"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="P4DTransformers:Clean;dclP4DTransformers:Clean;P4DDiffUsers:Clean;dclP4DDiffUsers:Clean;P4DFtFy:Clean;dclP4DFtFy:Clean;P4DSpacy:Clean;dclP4DSpacy:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="P4DTransformers:Make;dclP4DTransformers:Make;P4DDiffUsers:Make;dclP4DDiffUsers:Make;P4DFtFy:Make;dclP4DFtFy:Make;P4DSpacy:Make;dclP4DSpacy:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

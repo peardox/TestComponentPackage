@@ -6,7 +6,7 @@
         <FrameworkType>None</FrameworkType>
         <MainSource>dclP4DFtFy.dpk</MainSource>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <ProjectGuid>{F9FC7399-D741-4A89-A334-A0FC1BA4F09F}</ProjectGuid>
+        <ProjectGuid>{14ACB1AE-5EF3-4B8A-8001-09F3C1C0F075}</ProjectGuid>
         <ProjectVersion>19.5</ProjectVersion>
         <TargetedPlatforms>1</TargetedPlatforms>
     </PropertyGroup>

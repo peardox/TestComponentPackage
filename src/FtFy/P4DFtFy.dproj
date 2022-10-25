@@ -6,7 +6,7 @@
         <FrameworkType>None</FrameworkType>
         <MainSource>P4DFtFy.dpk</MainSource>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <ProjectGuid>{435CDA4C-1177-4195-8F51-E5C889F6812D}</ProjectGuid>
+        <ProjectGuid>{005DDD5C-F961-4E75-912B-342D777492BD}</ProjectGuid>
         <ProjectVersion>19.5</ProjectVersion>
         <TargetedPlatforms>168083</TargetedPlatforms>
     </PropertyGroup>

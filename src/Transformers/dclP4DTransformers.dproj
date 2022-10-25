@@ -6,7 +6,7 @@
         <FrameworkType>None</FrameworkType>
         <MainSource>dclP4DTransformers.dpk</MainSource>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <ProjectGuid>{DFCE9CA1-4316-43B4-9B00-8B5560535C40}</ProjectGuid>
+        <ProjectGuid>{461C4727-D5B6-449B-86FA-3FBEAC00CBD8}</ProjectGuid>
         <ProjectVersion>19.5</ProjectVersion>
         <TargetedPlatforms>1</TargetedPlatforms>
     </PropertyGroup>

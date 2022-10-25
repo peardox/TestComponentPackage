@@ -6,7 +6,7 @@
         <FrameworkType>None</FrameworkType>
         <MainSource>P4DSpacy.dpk</MainSource>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
-        <ProjectGuid>{B5A0ABDE-6CE5-4ECD-8A4F-D65A385C6BBF}</ProjectGuid>
+        <ProjectGuid>{FD544D85-1105-4267-BA93-3668B31D2070}</ProjectGuid>
         <ProjectVersion>19.5</ProjectVersion>
         <TargetedPlatforms>168083</TargetedPlatforms>
     </PropertyGroup>

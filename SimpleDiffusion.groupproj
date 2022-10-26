@@ -1,6 +1,6 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
-        <ProjectGuid>{786D903C-DE1A-4241-8899-F4DE853BE92A}</ProjectGuid>
+        <ProjectGuid>{A5191283-0EB9-4954-B204-1BC42434F1FF}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
         <Projects Include="src\Transformers\P4DTransformers.dproj">

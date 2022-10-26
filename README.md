@@ -1,5 +1,4 @@
 # Simple Diffusion
-<iframe src="https://discord.com/widget?id=727524567865622559&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 
 Stability AI and our collaborators are proud to announce the first stage of release of Stable Diffusion to researchers via this form, the model weights are hosted by our friends at Hugging Face once you get access. The code is available here and the model card here. We are working together towards a public release soon. 
 
